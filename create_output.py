@@ -10,8 +10,9 @@ load_dotenv()
 
 # OpenAI API Key
 api_key = os.getenv("API_KEY")
+api_key_grok = os.getenv("grok_api_key")
 
-if not api_key:
+if not api_key or not api_key_grok:
     raise ValueError("API_KEY não encontrada no arquivo .env")
 
 # Function to encode the image
@@ -25,6 +26,11 @@ folder_path = "./dataset/images/"
 headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {api_key}"
+}
+
+headers_grok = {
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {api_key_grok}"
 }
 
 # Question to ask for each image
@@ -106,6 +112,41 @@ def process_image(image_path, image_name):
     response_json = response.json()
     return response_json['choices'][0]['message']['content']
 
+# Function to process each image and get the description - Grok
+def process_image_grok(image_path, image_name):
+    base64_image = encode_image(image_path)
+    
+    payload = {
+        "model": "grok-vision-beta",
+        "stream": False,
+        "temperature": 0,
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": question
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": {
+                            "url": f"data:image/jpeg;base64,{base64_image}"
+                        }
+                    }
+                ]
+            }
+        ],
+        "max_tokens": 300
+    }
+
+    response = requests.post("https://api.x.ai/v1/chat/completions", headers=headers_grok, json=payload)
+    response_json = response.json()
+    print(response_json)
+    return response_json['choices'][0]['message']['content']
+
+
+
 # List to store all JSON data
 all_json_data = []
 
@@ -113,7 +154,7 @@ all_json_data = []
 for image_name in os.listdir(folder_path):
     if image_name.endswith((".jpg", ".jpeg", ".png")):
         image_path = os.path.join(folder_path, image_name)
-        formatted_answers = process_image(image_path, image_name)
+        formatted_answers = process_image_grok(image_path, image_name)
         
         json_data = {
             "id": image_name.split('.')[0],
@@ -133,7 +174,7 @@ for image_name in os.listdir(folder_path):
         all_json_data.append(json_data)
         
 # Save the results to a JSON file
-output_file = "output.json"
+output_file = "output_grok.json"
 with open(output_file, "w") as outfile:
     json.dump(all_json_data, outfile, indent=4)
 

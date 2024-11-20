@@ -1,0 +1,478 @@
+[
+    {
+        "id": "0",
+        "image": "0.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "image": "1.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "image": "10.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "image": "11.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "image": "12.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "image": "13.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "image": "14.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "image": "15.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "image": "16.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas pretas e marrons com margens bem definidas, indicando \u00e1reas mortas. Essas caracter\u00edsticas s\u00e3o t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "image": "17.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons escuras com margens bem definidas, indicando \u00e1reas mortas. Essas caracter\u00edsticas s\u00e3o t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "image": "18.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta uma grande mancha marrom escura com margens bem definidas, indicando necrose. Esta caracter\u00edstica \u00e9 t\u00edpica da antracnose, que causa \u00e1reas mortas nas folhas.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "image": "19.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons escuras com margens bem definidas, indicando \u00e1reas mortas. Essas caracter\u00edsticas s\u00e3o t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "image": "2.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "image": "20.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas pretas e marrons com margens bem definidas, indicando \u00e1reas mortas. Essas caracter\u00edsticas s\u00e3o t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "image": "3.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "image": "4.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "image": "5.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "image": "6.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "64",
+        "image": "64.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons com margens bem definidas, indicando \u00e1reas mortas. Essas caracter\u00edsticas s\u00e3o t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "65",
+        "image": "65.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Mancha de ascoquita (Ascochyta spp.)\",\n  \"characteristics\": \"A folha apresenta manchas irregulares marrons, que s\u00e3o caracter\u00edsticas da mancha de ascoquita. As manchas est\u00e3o distribu\u00eddas pela superf\u00edcie da folha, indicando uma infec\u00e7\u00e3o por Ascochyta spp.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "66",
+        "image": "66.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "```json\n{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"Manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\"\n}\n```"
+            }
+        ]
+    },
+    {
+        "id": "67",
+        "image": "67.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Cercosporiose (Cercospora coffeicola)\",\n  \"characteristics\": \"A folha apresenta manchas circulares com centros claros e bordas escuras, caracter\u00edsticas t\u00edpicas da Cercosporiose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "68",
+        "image": "68.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta uma mancha marrom escura com margens bem definidas, indicando uma \u00e1rea morta. Este padr\u00e3o \u00e9 t\u00edpico da antracnose, que causa les\u00f5es necr\u00f3ticas nas folhas.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "69",
+        "image": "69.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta uma mancha marrom escura com margens bem definidas, indicando uma \u00e1rea morta. Isso \u00e9 caracter\u00edstico da antracnose, que geralmente causa les\u00f5es necr\u00f3ticas nas folhas.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "image": "7.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "70",
+        "image": "70.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons com margens bem definidas, indicando \u00e1reas mortas, caracter\u00edsticas t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "71",
+        "image": "71.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta uma mancha marrom escura com margens bem definidas, indicando uma \u00e1rea morta. Esta caracter\u00edstica \u00e9 t\u00edpica da antracnose, que causa les\u00f5es necr\u00f3ticas nas folhas.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "72",
+        "image": "72.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "```json\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte superior da folha, indicando a presen\u00e7a de ferrugem do caf\u00e9.\"\n}\n```"
+            }
+        ]
+    },
+    {
+        "id": "73",
+        "image": "73.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons com margens bem definidas, algumas \u00e1reas mortas e necrosadas, caracter\u00edsticas t\u00edpicas da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "74",
+        "image": "74.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Cercosporiose (Cercospora coffeicola)\",\n  \"characteristics\": \"A folha apresenta manchas circulares com centros claros e bordas escuras, caracter\u00edsticas t\u00edpicas da cercosporiose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "75",
+        "image": "75.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Antracnose (Colletotrichum spp.)\",\n  \"characteristics\": \"A folha apresenta manchas marrons com margens bem definidas, algumas \u00e1reas parecem estar mortas ou necrosadas, o que \u00e9 t\u00edpico da antracnose.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "76",
+        "image": "76.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": false,\n  \"disease\": \"Mancha de ascoquita (Ascochyta spp.)\",\n  \"characteristics\": \"A folha apresenta manchas irregulares marrons na superf\u00edcie, indicando poss\u00edveis sinais de infec\u00e7\u00e3o por Ascochyta spp.\"\n}"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "image": "8.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "image": "9.jpg",
+        "conversations": [
+            {
+                "from": "human",
+                "value": "\nVoc\u00ea agora \u00e9 um especialista em agronomia, especializado na an\u00e1lise de doen\u00e7as em folhas de caf\u00e9. Sua tarefa \u00e9 identificar se a folha est\u00e1 saud\u00e1vel ou n\u00e3o, qual doen\u00e7a ela apresenta (se houver) e descrever as caracter\u00edsticas observadas. Eu enviarei uma descri\u00e7\u00e3o ou imagem (caso aplique) de uma folha de caf\u00e9, e voc\u00ea dever\u00e1 retornar as informa\u00e7\u00f5es em um formato JSON.\n\nPor favor, siga este modelo de resposta:\n\n{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}\n\nCaso a folha apresente sinais de doen\u00e7a, o JSON deve seguir este formato:\n\n{\n  \"healthy\": false,\n  \"disease\": \"Nome da Doen\u00e7a\",\n  \"characteristics\": \"Descri\u00e7\u00e3o detalhada das caracter\u00edsticas observadas na folha.\"\n}\n\n### Exemplos de doen\u00e7as que voc\u00ea pode identificar:\n- Ferrugem do caf\u00e9 (Hemileia vastatrix): manchas amareladas ou alaranjadas na parte inferior da folha.\n- Cercosporiose (Cercospora coffeicola): manchas circulares com centros claros e bordas escuras.\n- Mancha de ascoquita (Ascochyta spp.): manchas irregulares marrons ou pretas.\n- Antracnose (Colletotrichum spp.): manchas pretas ou marrons com margens bem definidas, frequentemente com \u00e1reas mortas.\n\n**Instru\u00e7\u00f5es adicionais:**\n- Baseie-se na descri\u00e7\u00e3o ou imagem fornecida.\n- Se houver m\u00faltiplas doen\u00e7as poss\u00edveis, liste a mais prov\u00e1vel com base nas caracter\u00edsticas descritas.\n- Caso n\u00e3o seja poss\u00edvel determinar com clareza, indique como \"inconclusivo\" no campo `disease`.\n\nAbaixo segue um exemplo de entrada e sa\u00edda para o contexto:\n\nEntrada:\n\"Uma folha de caf\u00e9 com manchas amarelas e alaranjadas na parte inferior.\"\n\nSa\u00edda:\n{\n  \"healthy\": false,\n  \"disease\": \"Ferrugem do caf\u00e9 (Hemileia vastatrix)\",\n  \"characteristics\": \"Manchas amareladas e alaranjadas localizadas na parte inferior da folha.\"\n}\n\nAgora, sempre retorne o diagn\u00f3stico em JSON conforme descrito. Aqui est\u00e1 minha an\u00e1lise:\n\nDescri\u00e7\u00e3o da folha:\n[Descreva a folha ou insira a imagem]\n"
+            },
+            {
+                "from": "gpt",
+                "value": "{\n  \"healthy\": true,\n  \"disease\": null,\n  \"characteristics\": null\n}"
+            }
+        ]
+    }
+]
